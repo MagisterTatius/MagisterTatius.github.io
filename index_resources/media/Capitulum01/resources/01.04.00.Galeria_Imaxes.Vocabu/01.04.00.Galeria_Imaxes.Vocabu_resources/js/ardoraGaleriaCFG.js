@@ -1,0 +1,15 @@
+var goURLNext=false; goURLRepeat=false;tiAval=false;
+var colorBack="#FFFDFD"; colorButton="#91962F"; colorText="#000000"; colorSele="#FF8000";
+var fActi="Arial, Helvetica, sans-serif";
+var fEnun="Arial, Helvetica, sans-serif";
+var itemHelp=["Fluuius","Insula","Oppidum","Oceanus","Imperium","Prouincia","Numerus","Littera","Vocabulum","Magnus, -a, -um","Paruus, -a, -um","Multi, -ae, -a","Pauci, -ae, -a","In"];
+function giveZindex(typeElement){var valueZindex=0; capas=document.getElementsByTagName(typeElement);
+for (i=0;i<capas.length;i++){if (parseInt($(capas[i]).css("z-index"),10)>valueZindex){valueZindex=parseInt($(capas[i]).css("z-index"),10);}}return valueZindex;}
+var fileIma=["i_--1450832689fjT.jpg","i_Insula.jpg","i_Celtic_Oppidum_1st_century_B.C..jpg","i_oceanus.jpg","i_Imperium.Romanum.jpg","i_Prouinciae.jpg","i_Numeri.jpg","i_Litterae.jpg","i_Vocabula.jpg","i_Magnus.jpg","i_paruus.jpg","i_Multae_insulae.jpg","i_Pauci_fluuii.jpg","i_IN.prepos.jpg"];
+var fileX=["800","800","424","800","800","780","400","453","614","348","800","800","581","319"];
+var fileY=["533","501","264","449","476","600","304","206","386","239","597","576","600","262"];
+var txt=["- Nilus fluuius est.<br><br>- In Europa multi et magni fluuii sunt.<br><br>- In Arabia pauci et parui sunt fluuii.","Creta insula est.<br><br>In Graecia multae insulae paruae sunt.<br><br>Britannia non insula parua, sed magna est.","Lucus est oppidum gallaecum<br><br>Brundisium oppidum magnum est<br><br>Sparta et Delphi oppida parua sunt","- Num oceanus Atlanticus paruus est?<br><br>- Non paruus, sed magnus est oceanus.","- Vbi est imperium romanum?<br><br>- Imperium romanum est in Europa, in Asia, in Africa.<br><br>In imperio romano multae prouinciae sunt. <br><br>Magnum est imperium romanum!","Gallaecia prouincia romana est.<br><br>Lusitania et Baetica quoque prouinciae romanae sunt.<br><br>In imperio romano multae prouinciae sunt, magnae et paruae.","I et II numeri sunt. III quoque numerus est.<br><br>I, II, III numeri romani sunt.<br><br>M (mille) magnus numerus est.","A et B litterae sunt. C quoque littera est.<br><br>A est littera prima (I), B littera secunda (II), C littera tertia (III).<br><br>A, B, C litterae latinae sunt.","Fluuius, littera, oppidum uocabula latina sunt.<br><br>In capitulo primo mille uocabula sunt.","Mille magnus numerus est<br><br>Rhenus et Danuuius magni fluuii sunt.<br><br>Britannia non parua insula, sed magna est.","Iulia puella parua est.<br><br>Creta non insula parua, sed magna est.","In Graecia multae insulae sunt.<br><br>Multi fluuii in Europa sunt, sed pauci in Arabia.","In Arabia pauci fluuii sunt.<br><br>In Aegypto sunt paucae insulae.<br><br>In uocabulo DVO sunt paucae litterae,","In imperio romano sunt multae prouinciae.<br><br>In Italia Roma est.<br><br>In capitulo primo mille uocabula sunt."];
+var fileMP3=["","","","","","","","","","","","","","","","","","","","","","","","",""];
+var fileOgg=["","","","","","","","","","","","","","","","","","","","","","","","",""];
+var conType=["","","","","","","","","","","","","",""];
+var conLink=["","","","","","","","","","","","","",""];
